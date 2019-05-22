@@ -1,0 +1,65 @@
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            color: rgba(0, 0, 0, .84);
+            font-family: "Arial", sans-serif;
+        }
+
+        #hamburger {
+            font-size: 4.5rem !important;
+            margin-left: 1.5rem;
+        }
+
+        #menuHeader {
+            display: none;
+            width: 100vw;
+            height: 10vh;
+            background-color: #F2F2F2;
+            align-items: center;
+        }
+
+        #menuBody {
+            display: none;
+            /* z-index: 1; */
+            position: absolute;
+            width: 100vw;
+            height: 40vh;
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 770px) {
+            #menuHeader {
+                display: flex;
+            }
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        #menuBody>a {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 2px;
+            background-color: #F2F2F2;
+            text-decoration: none;
+            color: rgba(0, 0, 0, .84);
+        }
+
+        #menuBody>a:hover {
+            background-color: #588FC1;
+        }
+
+        .active {
+            background-color: #588FC1 !important;
+        }
