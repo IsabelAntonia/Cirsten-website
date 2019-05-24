@@ -41,25 +41,70 @@
             display: block !important;
         }
 
-        .hide {
-            display: none !important;
-        }
 
         #menuBody>a {
-            padding: 2rem;
+            padding-left: 2rem;
+            height: 60px;
+            height: 6rem;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             letter-spacing: 2px;
             background-color: #F2F2F2;
             text-decoration: none;
             color: rgba(0, 0, 0, .84);
         }
 
-        #menuBody>a:hover {
+        #menuBody>a:hover,
+        #subMenu>a:hover {
             background-color: #588FC1;
         }
 
         .active {
             background-color: #588FC1 !important;
+        }
+
+        #subMenu>a {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            background-color: #F2F2F2;
+            text-decoration: none;
+            color: rgba(0, 0, 0, .84);
+        }
+
+        #subMenu {
+            display: none;
+        }
+
+        #dropDown {
+            font-size: 5rem !important;
+        }
+
+        .fixed {
+            position: fixed !important;
+            animation: popDown 0.5s;
+            top: 0;
+            animation-duration: 0.5s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: popDown;
+        }
+
+        @keyframes popDown {
+            0% {
+                transform: translateY(-100px);
+            }
+        }
+
+        .fixMenu {
+            position: fixed !important;
+            top: 10vh;
         }
