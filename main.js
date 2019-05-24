@@ -14,13 +14,13 @@ function openSubMenu() {
 }
 
 
-
-
 $(window).on("scroll", function () {
 
+    if ($("#menuBody").hasClass('show')) { // while scrolling menu is open - close it 
+        $("#menuBody").removeClass("show");
+    }
 
-
-    if ($(window).scrollTop() > ($('#menuHeader').outerHeight())) {
+    if ($(window).scrollTop() > ($('#menuHeader').outerHeight())) { 
         $("#menuHeader").addClass("fixed");
         $("#menuBody").addClass("fixMenu");
 
