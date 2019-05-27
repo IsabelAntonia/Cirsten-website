@@ -20,7 +20,7 @@
 #dropDown1,
 #dropDown2 {
   font-size: 5rem !important;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 /* Menu screen */
@@ -79,12 +79,13 @@ nav > a,
 
 #subMenu1 > a,
 #subMenu2 > a {
-  background-color: grey;
-  font-size: 1.4rem;
+  background-color: white;
+  font-size: 1.2rem;
 }
 
 #menuBody > a:hover,
-#subMenu > a:hover,
+#subMenu1 > a:hover,
+#subMenu2 > a:hover,
 nav > a:hover {
   background-color: #588fc1;
 }
@@ -139,32 +140,54 @@ body {
 p {
   font-size: 2rem;
   letter-spacing: 0.5px;
-  line-height: 1.58;
+  line-height: 1.8;
   word-break: break-word;
+  max-width: 700px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
+  line-height: 1.58;
+  text-align: center;
+  margin-top: 0;
+  max-width: 700px;
+}
+
+h2 {
+  font-size: 2.2rem;
 }
 
 #main {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  padding: 8rem 4rem 0 4rem;
 }
 
 hr {
   width: 100%;
+  max-width: 700px;
 }
 
-/* Media queries  */
-@media (max-width: 770px) {
+img {
+  margin-bottom: 8rem;
+  max-width: 100%;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 1024px) {
   p {
     font-size: 1.8rem;
   }
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   #menuHeader {
@@ -172,7 +195,20 @@ hr {
   }
 }
 
-@media (min-width: 771px) {
+@media (max-width: 400px) {
+  p {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1025px) {
   #aside {
     display: block;
     padding: 8rem 6rem 0 6rem;
