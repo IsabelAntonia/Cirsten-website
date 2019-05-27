@@ -1,111 +1,192 @@
-        html {
-            font-size: 62.5%;
-        }
+/* Submenu style */
 
-        body {
-            overflow-x: hidden;
-            margin: 0;
-            color: rgba(0, 0, 0, .84);
-            font-family: "Arial", sans-serif;
-        }
+#subMenu1 > a,
+#subMenu2 > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.84);
+}
 
-        #hamburger {
-            font-size: 4.5rem !important;
-            margin-left: 1.5rem;
-        }
+#subMenu1,
+#subMenu2 {
+  display: none;
+}
 
-        #menuHeader {
-            display: none;
-            width: 100vw;
-            height: 10vh;
-            background-color: #F2F2F2;
-            align-items: center;
-        }
+#dropDown1,
+#dropDown2 {
+  font-size: 5rem !important;
+  margin-right: 2rem;
+}
 
-        #menuBody {
-            display: none;
-            position: absolute;
-            top: 10vh;
-            width: 100vw;
-            font-size: 1.8rem;
-            height: 42rem;
-            overflow-y: scroll;
-        }
+/* Menu screen */
 
-        @media (max-width: 770px) {
-            #menuHeader {
-                display: flex;
-            }
-        }
+#aside {
+  display: none;
+}
 
-        .show {
-            display: block !important;
-        }
+/* Menu phone */
 
+#hamburger {
+  font-size: 4.5rem !important;
+  margin-left: 1.5rem;
+}
 
-        #menuBody>a {
-            padding-left: 2rem;
-            height: 6rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            letter-spacing: 2px;
-            background-color: #F2F2F2;
-            text-decoration: none;
-            color: rgba(0, 0, 0, .84);
-        }
+.darkBack {
+  background: rgba(0, 0, 0, 0.5);
+}
 
-        #menuBody>a:hover,
-        #subMenu>a:hover {
-            background-color: #588FC1;
-        }
+#menuHeader {
+  display: none;
+  width: 100vw;
+  height: 10vh;
+  background-color: #f2f2f2;
+  align-items: center;
+}
 
-        .active {
-            background-color: #588FC1 !important;
-        }
+#menuBody {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
 
-        #subMenu>a {
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            background-color: #F2F2F2;
-            text-decoration: none;
-            color: rgba(0, 0, 0, .84);
-        }
+  height: 42rem;
+  overflow-y: scroll;
+}
 
-        #subMenu {
-            display: none;
-        }
+.show {
+  display: block !important;
+}
 
-        #dropDown {
-            font-size: 5rem !important;
-            margin-right: 2rem;
-        }
+#menuBody > a,
+nav > a,
+#subMenu1 > a,
+#subMenu2 > a {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  background-color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
 
-        .fixed {
-            position: fixed !important;
-            animation: popDown 0.5s;
-            top: 0;
-            animation-duration: 0.5s;
-            animation-timing-function: ease;
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-            animation-direction: normal;
-            animation-fill-mode: none;
-            animation-play-state: running;
-            animation-name: popDown;
-        }
+#subMenu1 > a,
+#subMenu2 > a {
+  background-color: grey;
+  font-size: 1.4rem;
+}
 
-        @keyframes popDown {
-            0% {
-                transform: translateY(-100px);
-            }
-        }
+#menuBody > a:hover,
+#subMenu > a:hover,
+nav > a:hover {
+  background-color: #588fc1;
+}
 
-        .fixMenu {
-            position: fixed !important;
+.active {
+  background-color: #588fc1 !important;
+}
 
-        }
+/* Menu effect drop down */
+
+.fixed {
+  position: fixed !important;
+  animation: popDown 0.5s;
+  top: 0;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: popDown;
+}
+
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+
+.fixMenu {
+  position: fixed !important;
+}
+
+/* General style */
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: inherit !important;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.84);
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.58;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+}
+
+/* Media queries  */
+@media (max-width: 770px) {
+  p {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  #menuHeader {
+    display: flex;
+  }
+}
+
+@media (min-width: 771px) {
+  #aside {
+    display: block;
+    padding: 8rem 6rem 0 6rem;
+    position: fixed;
+    height: 100%;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+    max-width: 300px;
+    top: 0;
+    left: 0;
+  }
+
+  #main {
+    margin-left: 450px;
+    margin-right: 60px;
+  }
+}

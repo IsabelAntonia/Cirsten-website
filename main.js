@@ -1,15 +1,21 @@
 // everything menu related 
 document.getElementById("hamburger").addEventListener('click', openMenu)
 
-document.getElementById("dropDown").addEventListener('click', openSubMenu)
+console.log(document.getElementById('dropDown1'));
+document.getElementById('dropDown1').addEventListener('click', openSubMenu)
+document.getElementById('dropDown2').addEventListener('click', openSubMenu)
+
 
 function openMenu() {
     $("#menuBody").toggleClass("show");
+    $("#main").toggleClass("darkBack");
 }
 
 function openSubMenu() {
     event.preventDefault();
-    $("#subMenu").toggleClass("show");
+
+    $("#subMenu1").toggleClass("show");
+    $("#subMenu2").toggleClass("show");
 
 }
 
@@ -20,7 +26,7 @@ $(window).on("scroll", function () {
         $("#menuBody").removeClass("show");
     }
 
-    if ($(window).scrollTop() > ($('#menuHeader').outerHeight())) { 
+    if ($(window).scrollTop() > ($('#menuHeader').outerHeight())) {
         $("#menuHeader").addClass("fixed");
         $("#menuBody").addClass("fixMenu");
 
@@ -29,6 +35,7 @@ $(window).on("scroll", function () {
     if ($(window).scrollTop() <= ($('#menuHeader').outerHeight())) {
         $("#menuHeader").removeClass("fixed");
         $("#menuBody").removeClass("fixMenu");
+        $("#main").removeClass("darkBack");
     }
 
 });
