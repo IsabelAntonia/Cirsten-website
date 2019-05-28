@@ -1,13 +1,16 @@
 // everything menu related 
 document.getElementById("hamburger").addEventListener('click', openMenu)
-
-console.log(document.getElementById('dropDown1'));
 document.getElementById('dropDown1').addEventListener('click', openSubMenu)
 document.getElementById('dropDown2').addEventListener('click', openSubMenu)
+document.getElementById('main').addEventListener('click', toggleMenu)
+
 
 
 function openMenu() {
+
     $("#menuBody").toggleClass("show");
+    $("#subMenu1").removeClass("show");
+    $("#menuBody").scrollTop(0);
     $("#main").toggleClass("darkBack");
 }
 
@@ -17,6 +20,20 @@ function openSubMenu() {
     $("#subMenu1").toggleClass("show");
     $("#subMenu2").toggleClass("show");
 
+}
+
+function toggleMenu() {
+
+
+    if (event.target != $("#menuBody")) {
+
+        if ($("#menuBody").hasClass('show')) {
+
+            $("#menuBody").removeClass("show");
+            $("#main").removeClass("darkBack");
+
+        }
+    }
 }
 
 
