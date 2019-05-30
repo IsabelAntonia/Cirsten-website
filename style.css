@@ -159,14 +159,30 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+.addMargin:after {
+  content: "";
+  margin-right: 10px solid blue;
+}
+
+.listWerde,
 p {
   font-size: 2rem;
   letter-spacing: 0.5px;
   line-height: 1.8;
   word-break: break-word;
   max-width: 700px;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+}
+
+.listWerde > li {
+  margin-bottom: 2rem;
+}
+
+ol > li {
+  margin-top: 2rem;
+}
+
+.dots {
+  list-style: disc;
 }
 
 h1 {
@@ -179,6 +195,18 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
+  color: #588fc1;
+  line-height: 1.58;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.58;
+  width: 100%;
+  max-width: 700px;
 }
 
 #main {
@@ -189,9 +217,16 @@ h2 {
   height: 100%;
 }
 
+h1 + hr {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 6rem;
+}
+
 hr {
   width: 100%;
   max-width: 700px;
+  margin-bottom: 3rem;
 }
 
 img {
@@ -201,7 +236,9 @@ img {
 
 /* Media queries for smaller screens */
 @media (max-width: 1024px) {
-  p {
+  p,
+  .listWerde,
+  h3 {
     font-size: 1.8rem;
   }
 
@@ -209,7 +246,11 @@ img {
     font-size: 2.2rem;
   }
 
-  h1 {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
     font-size: 2rem;
   }
 
@@ -221,15 +262,22 @@ img {
 /* Media queries for phones */
 
 @media (max-width: 400px) {
-  p {
-    font-size: 1.6rem;
+  p,
+  .listWerde,
+  h3 {
+    font-size: 1.4rem;
   }
-  h1 {
-    font-size: 2rem;
-  }
-
   h1 {
     font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  hr {
+    margin-bottom: 3rem;
   }
 
   #footer {
@@ -238,6 +286,13 @@ img {
 
   footer {
     font-size: 1rem;
+  }
+  img {
+    margin-bottom: 4rem;
+  }
+
+  #listWerde > li {
+    margin-bottom: 1rem;
   }
 }
 

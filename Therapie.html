@@ -6,36 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychotherapie Cirsten Ullrich | Über Therapie</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Menu only visible for phones -->
-    <div class="hidden" id="menuHeader">
+    <!-- Menu only visible =< 1024px -->
+    <div id="menuHeader">
         <i id="hamburger" class="material-icons">menu</i>
     </div>
 
     <div id="menuBody">
-        <a href="index.html">Willkommen</a>
+        <a class="active" href="index.html">Willkommen</a>
         <a href="Cirsten.html">Cirsten Ullrich</a>
-        <a class="active" href="Therapie.html">Über Therapie</a>
+        <a href="Therapie.html">Über Therapie</a>
         <a id="openSub" href="Therapieangebot.html">Therapieangebot
-            <i class="material-icons" id="dropDown">arrow_drop_down</i>
+            <i class="material-icons" id="dropDown1">arrow_drop_down</i>
         </a>
-        <div id="subMenu">
+        <div id="subMenu1">
             <a href="#">Behandlungsschwerpunkte</a>
-            <a href="#">Verhaltenstherapie</a>
-            <a href="#">Schematherapie</a>
-            <a href="#">Gruppentherapie</a>
-            <a href="#">Selbsterfahrung und Supervision</a>
+            <a href="#1">Verhaltenstherapie</a>
+            <a href="#2">Schematherapie</a>
+            <a href="#3">Gruppentherapie</a>
+            <a href="#4">Supervision</a>
         </div>
         <a href="Kontakt.html">Kontakt</a>
         <a href="Datenschutz.html">Datenschutz</a>
         <a href="Impressum.html">Impressum</a>
 
     </div>
-    <h2>Therapie</h2>
+
+    <!-- Menu visible starting from 1025px next to main content -->
+
+    <div id="aside">
+        <nav>
+            <a href="index.html">Willkommen</a>
+            <a href="Cirsten.html">Cirsten Ullrich</a>
+            <a class="active" href="Therapie.html">Über Therapie</a>
+            <a id="openSub" href="Therapieangebot.html">Therapieangebot
+                <i class="material-icons" id="dropDown2">arrow_drop_down</i>
+            </a>
+            <div id="subMenu2">
+                <a href="#">Behandlungsschwerpunkte</a>
+                <a href="#1">Verhaltenstherapie</a>
+                <a href="#2">Schematherapie</a>
+                <a href="#3">Gruppentherapie</a>
+                <a href="#4">Supervision</a>
+            </div>
+            <a href="Kontakt.html">Kontakt</a>
+            <a href="Datenschutz.html">Datenschutz</a>
+            <a href="Impressum.html">Impressum</a>
+        </nav>
+    </div>
+    <div id="main">
+
+        <img src="images/Löwenzahn.jpg" alt="Nature Photo">
+
+        <h1>Wissenswertes über Therapie</h1>
+
+        <hr>
+
+        <h3>Was ist Psychotherapie?</h3>
+        <p>In einer Psychotherapie werden psychische Erkrankungen behandelt. Ihre Psychotherapeutin bespricht
+            mit Ihnen gegenwärtige psychische Beschwerden, deren Entstehung und Möglichkeiten, diese zu
+            überwinden oder zumindest besser mit diesen zurecht zu kommen.
+            Eine Psychotherapie kann Ihnen helfen, psychische Einschränkungen zu bewältigen und vergangene,
+            schmerzliche Erlebnisse besser zu verarbeiten. Ihre Psychotherapeutin klärt mit Ihnen konfliktreiche
+            Beziehungen und überlegt mit Ihnen, wie Sie mit belastenden Situationen besser umgehen können,
+            Psychotherapie ist eine sehr wirksame Behandlung seelischer Störungen, die wirksamer ist als manche
+            Medikamente zur Behandlung körperlicher Erkrankungen.</p>
+        <h3>Wie verläuft eine Psychotherapie?</h3>
+        <p>In der Regel werden in einem Erstkontakt (der sogenannten Sprechstunde) ihre Beschwerden erfragt,
+            sowie mögliche Faktoren, die diese hervorrufen, verstärken oder lindern. Dabei sollten auch Ihre
+            Erwartungen und Ihre Motivation zur Behandlung besprochen werden. Für Sie ist es in diesem
+            Erstkontakt und möglicherweise weiteren Vorgesprächen wichtig, dass Sie sich einen Eindruck davon
+            verschaffen, ob Sie offen und vertrauensvoll mit der Psychotherapeutin sprechen können. Scheuen Sie
+            sich nicht, der Psychotherapeutin Ihre Fragen zur Behandlung zu stellen. Für eine erfolgreiche
+            Psychotherapie ist es sehr wichtig, dass Sie sich der Psychotherapeutin anvertrauen können. Ihnen stehen
+            für Ihre Entscheidung über die Aufnahme einer Psychotherapie mehrere Gespräche (auch bei
+            verschiedenen Therapeuten/Therapeutinnen) zur Verfügung.</p>
+        <h3>Behandlungskosten</h3>
+        <p>Die Kosten einer Psychotherapie werden, wenn Sie für die Behandlung einer psychischen Erkrankung
+            notwendig ist, in der Regel von den gesetzlichen und privaten Krankenversicherungen sowie der Behilfe
+            bis zu einem bestimmten Umfang übernommen. Falls Sie privat versichert sind, klären Sie bitte ab, ob, in
+            welchem Umfang und unter welchen Vorausetzungen ihre Versicherung die Kosten einer
+            psychotherapeutischen Behandlung übernimmt.
+            Auszüge, entnommen dem Informationsmaterial für Psychotherapeutenkammer PTK Bayern
+            https://www.ptk-bayern.de. Auf diesen Seiten können Sie sich auch vertieft über Psychotherapie
+            informieren.</p>
+
+        <div id="footer">
+            <ul>
+                <li>Psychotherapeutische Praxis Cirsten Ullrich</li>
+                <li>Gabelsbergerstraße 30</li>
+                <li>80333 München</li>
+                <li>praxis@cirstenullrich.de</li>
+                <li>089 5420858</li>
+            </ul>
+            <footer>Copyright ©2019 Alle Rechte vorbehalten | <a href="Datenschutz.html">Datenschutz</a> | <a
+                    href="Impressum.html">Impressum</a>
+            </footer>
+        </div>
+    </div>
+
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="main.js"></script>
