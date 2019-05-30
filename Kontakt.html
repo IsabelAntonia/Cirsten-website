@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychotherapie Cirsten Ullrich | Kontakt</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Menu only visible for phones -->
-    <div class="hidden" id="menuHeader">
+    <!-- Menu only visible =< 1024px -->
+    <div id="menuHeader">
         <i id="hamburger" class="material-icons">menu</i>
     </div>
 
@@ -21,22 +21,87 @@
         <a href="Cirsten.html">Cirsten Ullrich</a>
         <a href="Therapie.html">Über Therapie</a>
         <a id="openSub" href="Therapieangebot.html">Therapieangebot
-            <i class="material-icons" id="dropDown">arrow_drop_down</i>
+            <i class="material-icons" id="dropDown1">arrow_drop_down</i>
         </a>
-        <div id="subMenu">
+        <div id="subMenu1">
             <a href="#">Behandlungsschwerpunkte</a>
-            <a href="#">Verhaltenstherapie</a>
-            <a href="#">Schematherapie</a>
-            <a href="#">Gruppentherapie</a>
-            <a href="#">Selbsterfahrung und Supervision</a>
+            <a href="#1">Verhaltenstherapie</a>
+            <a href="#2">Schematherapie</a>
+            <a href="#3">Gruppentherapie</a>
+            <a href="#4">Supervision</a>
         </div>
         <a class="active" href="Kontakt.html">Kontakt</a>
         <a href="Datenschutz.html">Datenschutz</a>
         <a href="Impressum.html">Impressum</a>
 
     </div>
-    <h2>Kontakt</h2>
 
+    <!-- Menu visible starting from 1025px next to main content -->
+
+    <div id="aside">
+        <nav>
+            <a href="index.html">Willkommen</a>
+            <a href="Cirsten.html">Cirsten Ullrich</a>
+            <a href="Therapie.html">Über Therapie</a>
+            <a id="openSub" href="Therapieangebot.html">Therapieangebot
+                <i class="material-icons" id="dropDown2">arrow_drop_down</i>
+            </a>
+            <div id="subMenu2">
+                <a href="#">Behandlungsschwerpunkte</a>
+                <a href="#1">Verhaltenstherapie</a>
+                <a href="#2">Schematherapie</a>
+                <a href="#3">Gruppentherapie</a>
+                <a href="#4">Supervision</a>
+            </div>
+            <a class="active" href="Kontakt.html">Kontakt</a>
+            <a href="Datenschutz.html">Datenschutz</a>
+            <a href="Impressum.html">Impressum</a>
+        </nav>
+    </div>
+    <div id="main">
+
+
+        <h1>Kontaktinformationen</h1>
+
+        <hr>
+
+        <h2>Cirsten Ullrich</h2>
+        <ul class="listWerde contact">
+            <li>Adresse: Gabelsbergerstraße 30 | 80333 München</li>
+            <li>Telefon: 089 5420858</li>
+            <li>E-Mail: praxis@cirstenullrich.de</li>
+
+        </ul>
+
+
+        <p class="info">
+            Hinweis:
+            Im Rahmen der neuen Datenschutzverordnung möchte ich Sie zum Schutz ihrer persönlichen Daten darauf
+            aufmerksam machen,
+            dass weder eine Anfrage über das Kontaktformular, noch eine E-Mail, noch eine SMS
+            Ende-zu-Ende-verschlüsselt und damit
+            sicher sind. Das bedeutet, dass Sie genau darauf achten sollten, welche Informationen Sie über diese
+            Wege verschicken.
+            Wenig kritisch sind Terminerinnerungen oder reine Terminvereinbarungen. Indem Sie mir Emails zusenden,
+            stimmen Sie der
+            Kommunikation per Mail implizit zu. Diese Zustimmung können Sie jederzeit widerrufen.</p>
+        <iframe width="100%" style="margin-top: 4rem; max-width: 700px;" height="300" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Gabelsbergerstra%C3%9Fe%2030&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+        <div id="footer">
+            <ul>
+                <li>Psychotherapeutische Praxis Cirsten Ullrich</li>
+                <li>Gabelsbergerstraße 30</li>
+                <li>80333 München</li>
+                <li>praxis@cirstenullrich.de</li>
+                <li>089 5420858</li>
+            </ul>
+            <footer>Copyright ©2019 Alle Rechte vorbehalten | <a href="Datenschutz.html">Datenschutz</a> | <a
+                    href="Impressum.html">Impressum</a>
+            </footer>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>

@@ -1,7 +1,7 @@
 /* Submenu style */
 
-#subMenu1 > a,
-#subMenu2 > a {
+#subMenu1>a,
+#subMenu2>a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,10 +61,10 @@
   display: block !important;
 }
 
-#menuBody > a,
-nav > a,
-#subMenu1 > a,
-#subMenu2 > a {
+#menuBody>a,
+nav>a,
+#subMenu1>a,
+#subMenu2>a {
   padding: 0 1.5rem 0 1.5rem;
   height: 5rem;
   display: flex;
@@ -76,14 +76,14 @@ nav > a,
   text-decoration: none;
 }
 
-#subMenu1 > a,
-#subMenu2 > a {
+#subMenu1>a,
+#subMenu2>a {
   background-color: white;
   font-size: 1.2rem;
 }
 
-#subMenu2 > a:hover,
-nav > a:hover {
+#subMenu2>a:hover,
+nav>a:hover {
   background-color: #588fc1;
 }
 
@@ -138,31 +138,33 @@ footer {
   font-size: 1.2rem;
 }
 
-#footer > ul > li {
+#footer>ul>li {
   padding: 0.5rem;
 }
 
 html {
   font-size: 62.5%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 a {
   color: inherit !important;
 }
 
+.contact {
+  width: 100%;
+
+}
+
 body {
   overflow-x: hidden;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   color: rgba(0, 0, 0, 0.84);
   font-family: "Arial", sans-serif;
 }
 
-.addMargin:after {
-  content: "";
-  margin-right: 10px solid blue;
-}
+
 
 .listWerde,
 p {
@@ -173,11 +175,11 @@ p {
   max-width: 700px;
 }
 
-.listWerde > li {
+.listWerde>li {
   margin-bottom: 2rem;
 }
 
-ol > li {
+ol>li {
   margin-top: 2rem;
 }
 
@@ -217,7 +219,7 @@ h3 {
   height: 100%;
 }
 
-h1 + hr {
+h1+hr {
   width: 100%;
   max-width: 700px;
   margin-bottom: 6rem;
@@ -229,17 +231,27 @@ hr {
   margin-bottom: 3rem;
 }
 
+.info {
+  font-size: 1.6rem;
+}
+
 img {
   margin-bottom: 8rem;
   max-width: 100%;
 }
 
+
 /* Media queries for smaller screens */
 @media (max-width: 1024px) {
+
   p,
   .listWerde,
   h3 {
     font-size: 1.8rem;
+  }
+
+  .info {
+    font-size: 1.6rem;
   }
 
   h1 {
@@ -262,11 +274,17 @@ img {
 /* Media queries for phones */
 
 @media (max-width: 400px) {
+
   p,
   .listWerde,
   h3 {
     font-size: 1.4rem;
   }
+
+  .info {
+    font-size: 1.2rem;
+  }
+
   h1 {
     font-size: 1.8rem;
   }
@@ -276,7 +294,7 @@ img {
     margin-bottom: 1.5rem;
   }
 
-  hr {
+  h1+hr {
     margin-bottom: 3rem;
   }
 
@@ -287,11 +305,12 @@ img {
   footer {
     font-size: 1rem;
   }
+
   img {
     margin-bottom: 4rem;
   }
 
-  #listWerde > li {
+  #listWerde>li {
     margin-bottom: 1rem;
   }
 }
@@ -316,7 +335,7 @@ img {
   }
 
   #main {
-    margin-left: 450px;
-    margin-right: 60px;
+    margin-left: 400px;
+    margin-right: 45px;
   }
 }
