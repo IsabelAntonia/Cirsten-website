@@ -25,7 +25,7 @@ function openSubMenu() {
 function toggleMenu() {
 
 
-    if (event.target != $("#menuBody")) {
+    if (event.target != $("#menuBody")) { // if i click anywhere else than the menu remove menu 
 
         if ($("#menuBody").hasClass('show')) {
 
@@ -41,6 +41,8 @@ $(window).on("scroll", function () {
 
     if ($("#menuBody").hasClass('show')) { // while scrolling menu is open - close it 
         $("#menuBody").removeClass("show");
+        $("#main").removeClass("darkBack");
+
     }
 
     if ($(window).scrollTop() > ($('#menuHeader').outerHeight())) {
