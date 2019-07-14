@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Psychotherapie Cirsten Ullrich | Therapieangebot</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Menu only visible =< 1024px -->
-    <div id="menuHeader">
-      <i id="hamburger" class="material-icons">menu</i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Psychotherapie Cirsten Ullrich | Therapieangebot</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Menu only visible =< 1024px -->
+  <div id="menuHeader">
+    <i id="hamburger" class="material-icons">menu</i>
+  </div>
+
+  <div id="menuBody">
+    <a href="index.html">Willkommen</a>
+    <a href="Cirsten.html">Cirsten Ullrich</a>
+    <a href="Therapie.html">Über Therapie</a>
+    <a class="active" id="openSub" href="Therapieangebot.html">Therapieangebot
+      <i class="material-icons" id="dropDown1">arrow_drop_down</i>
+    </a>
+    <div id="subMenu1">
+      <a href="#0">Behandlungsschwerpunkte</a>
+      <a href="#1">Verhaltenstherapie</a>
+      <a href="#2">Schematherapie</a>
+      <a href="#3">Gruppentherapie</a>
+      <a href="#4">Supervision</a>
     </div>
+    <a href="Kontakt.html">Kontakt</a>
+    <a href="Datenschutz.html">Datenschutz</a>
+    <a href="Impressum.html">Impressum</a>
+  </div>
 
-    <div id="menuBody">
+  <!-- Menu visible starting from 1025px next to main content -->
+
+  <div id="aside">
+    <nav>
       <a href="index.html">Willkommen</a>
       <a href="Cirsten.html">Cirsten Ullrich</a>
       <a href="Therapie.html">Über Therapie</a>
-      <a class="active" id="openSub" href="Therapieangebot.html"
-        >Therapieangebot
-        <i class="material-icons" id="dropDown1">arrow_drop_down</i>
+      <a class="active" id="openSub" href="Therapieangebot.html">Therapieangebot
+        <i class="material-icons" id="dropDown2">arrow_drop_down</i>
       </a>
-      <div id="subMenu1">
+      <div id="subMenu2">
         <a href="#0">Behandlungsschwerpunkte</a>
         <a href="#1">Verhaltenstherapie</a>
         <a href="#2">Schematherapie</a>
@@ -36,300 +55,278 @@
       <a href="Kontakt.html">Kontakt</a>
       <a href="Datenschutz.html">Datenschutz</a>
       <a href="Impressum.html">Impressum</a>
-    </div>
+    </nav>
+  </div>
+  <div id="main">
+    <img src="images/cirsten1.jpeg" alt="Cirsten Ullrich" />
 
-    <!-- Menu visible starting from 1025px next to main content -->
+    <h1 id="0">Mein Therapieangebot</h1>
+    <hr />
 
-    <div id="aside">
-      <nav>
-        <a href="index.html">Willkommen</a>
-        <a href="Cirsten.html">Cirsten Ullrich</a>
-        <a href="Therapie.html">Über Therapie</a>
-        <a class="active" id="openSub" href="Therapieangebot.html"
-          >Therapieangebot
-          <i class="material-icons" id="dropDown2">arrow_drop_down</i>
-        </a>
-        <div id="subMenu2">
-          <a href="#0">Behandlungsschwerpunkte</a>
-          <a href="#1">Verhaltenstherapie</a>
-          <a href="#2">Schematherapie</a>
-          <a href="#3">Gruppentherapie</a>
-          <a href="#4">Supervision</a>
-        </div>
-        <a href="Kontakt.html">Kontakt</a>
-        <a href="Datenschutz.html">Datenschutz</a>
+    <h3>Meine Behandlungsschwerpunkte</h3>
+    <ul class="listWerde">
+      <li>
+        Therapie für Menschen in Lebenskrisen, die z.B. durch Verluste,
+        unerwünschte Veränderungen oder schwere Erkrankungen ausgelöst werden.
+        Die so verursachten Probleme können sich z.B. in Ängsten,
+        Depressionen, Selbstzweifeln, körperlichen Beschwerden oder
+        Beziehungsproblemen äußern
+      </li>
+      <li>
+        Therapie von Sozialen Ängsten und Problemen mit dem Selbstwert sowie
+        bei Unsicherheit in sozialen Situationen. Diese können sich
+        verschiedenen Lebensbereichen ausdrücken, etwa in den Lebensfeldern
+        Freundschaft, Familie, Partnerschaft oder im Studium/Ausbildung und
+        Beruf
+      </li>
+      <li>Psychotherapie für Psychotherapeuten</li>
+      <li>Supervision und Selbsterfahrung</li>
+      <div id="1"></div>
+    </ul>
+
+    <hr />
+    <h3>Was ist Verhaltenstherapie?</h3>
+    <ul class="listWerde">
+      <li>
+        Psychotherapie ist die Behandlung psychisch bedingter oder mitbedingter
+        Krankheiten bzw. Störungen mithilfe psychologischer Methoden, die
+        wissenschaftlich überprüft sind. Psychotherapeut/innen haben die
+        fachlich erforderlichen und gesetzlich definierten Voraussetzungen zur
+        Durchführung von Psychotherapie.
+      </li>
+      <li>
+        Die Verhaltenstherapie wendet Erkenntnisse aus der experimentell
+        begründeten Psychologie an. Der Fokus der Behandlung liegt klar auf
+        umschriebenen Verhaltensweisen, Kognitionen, Emotionen und
+        Körperreaktionen. Aufbauend auf einer genauen Analyse der aktuellen
+        Probleme werden konkrete Veränderungsziele und Umsetzungsmöglichkeiten
+        erarbeitet, die darauf gerichtet sind, eine Besserung zu erreichen.
+        Die persönliche Lebensgeschichte des Betroffenen und seine Erfahrung
+        mit früheren Problemlöseansätzen werden mitberücksichtigt.
+        Verhaltenstherapeutische Methoden schließen dabei auch praktische
+        Übungen wie etwas Rollenspiele, Imaginationen oder Körperübungen mit
+        ein.
+      </li>
+      <li>
+        Das Verfahren ist für die Behandlung im Rahmen der Gesetzlichen
+        Krankenversicherung zugelassen.
+      </li>
+      <li>
+        Entnommen in Auszügen aus Informationen der Psychotherapeutenkammer
+        Bayern für Patienten und Ratsuchende
+        <a target="_blank" href="https://www.ptk-bayern.de">https://www.ptk-bayern.de</a>. Auf
+        diesen Seiten können Sie sich über Verhaltenstherapie auch
+        weitergehend informieren.
+      </li>
+      <div id="2"></div>
+    </ul>
+
+    <hr />
+    <h3>Was ist Schematherapie?</h3>
+    <ul class="listWerde">
+      <li>
+        Die Schematherapie geht davon aus, dass viele Störungen entstehen,
+        nachdem in der Lebensgeschichte (und hier überwiegend in Kindheit und
+        Jugend) zentrale Bedürfnisse (z.B. nach Bindung, Autonomie oder
+        realistischen Grenzen) nicht erfüllt wurden. Diese ungünstigen
+        Erfahrungen (zusammen mit Veranlagungsfaktoren) bewirken die
+        Entstehung von ungünstigen, z.T. schädlichen Verhaltens- und
+        Erlebnismustern (sogenannten Schemata), die sich in verschiedener
+        Weise (sogenannten Modi) zeigen:
+        <ol class="dots">
+          <li>
+            Im kindlichen Modus werden altbekannte, leidvolle Emotionen
+            wiedererlebt (z.B. Angst, Einsamkeit, Verletzlichkeit u.Ä.).
+          </li>
+          <li>
+            Im unerbittlich fordernden oder strafenden Elternmodus sind „alte“
+            abwertende, strafende, unerbittlich antreibende Selbstbewertungen
+            gespeichert, die als innere Stimmen unser Verhalten kommentieren
+            und bestimmen (z.B. „du bist nichts wert“, „sorge dich
+            ausschließlich um Andere“ etc.).
+          </li>
+          <li>
+            Im Bewältigungsmodus versucht die Person, die Aktualisierung
+            dieser negativ erlebten Emotionen zu vermeiden, indem sie
+            ungünstige Verhaltensmuster einsetzt (z.B. Vermeiden,
+            Überkompensieren, Erdulden etc.).
+          </li>
+        </ol>
+      </li>
+      <li>
+        In der Behandlung werden diese Modi gemeinsam in einer Fallkonzeption
+        gesammelt und insbesondere in Rollenspielen (sog. Stuhldialogen) und
+        Imaginationen verändert, damit ein heilsamer, neuer Umgang mit den
+        ursprünglich belastenden Situationen entwickelt, erprobt und eingeübt
+        werden kann.
+      </li>
+      <li>
+        Charakteristisch für die Schematherapie sind also:
+
+        <ol class="dots">
+          <li>
+            ein hoher biographischer Bezug und die Arbeit mit inneren Anteilen
+            sowie die ausgeprägte emotionale Aktivierung
+          </li>
+          <li>
+            besondere Betonung der liebevollen Therapiebeziehung auch in der
+            Konfrontation
+          </li>
+          <li>
+            die Betrachtung der „Bewältigungsmodi“ genannten dysfunktionalen
+            Coping Stile und Abwehr (z.B. Vermeidung, Überanpassung oder
+            dysfunktionale Kompensation), welche oft die Kommunikation
+            behindern, die Therapie blockieren und/oder selbst schon zum
+            Problem geworden sind (z.B. Sucht).
+          </li>
+        </ol>
+      </li>
+      <li>
+        Ursprünglich wurde die Schematherapie zur Behandlung von
+        Persönlichkeitsstörungen entwickelt, inzwischen gibt es auch
+        Wirknachweise für z.B. Depressionen, Zwänge und Ängste.
+      </li>
+      <li>
+        Der besondere Verdienst der Schematherapie besteht darin, Inhalte
+        anderer Therapieverfahren in die Verhaltenstherapie zu integrieren.
+        Schematherapie erweitert die Verhaltenstherapie um systemische und
+        humanistische Aspekte wie Arbeit mit inneren Anteilen, therapeutische
+        Haltung, Selbstheilungsgedanke, Imagination und durch
+        psychoanalytische Betrachtungsweisen wie Arbeit mit der Abwehr,
+        Beziehungsarbeit.
+      </li>
+      <li>
+        Entnommen und vereinfacht aus Beth, W., Jacob, G.; Ullrich, C. (2016)
+        Schematherapie in der VT- Selbsterfahrung. S.225f. In Mösler, Poppek et
+        al (Hrsg.) .S.223-252. Tübingen Psychotherapieverlag.
+      </li>
+      <li>
+        Eine Schilderung einer exemplarischen Therapie einer Patientin mit einer
+        selbstunsicheren und anankastischen Persönlichkeitsstörung, einer
+        nicht näher bezeichneten Essstörung und einer Dysthymia findet sich
+        z.B. In Fallbuch Schematherapie, Jacob, Seebauer (Hrsg.), 2013, Ich
+        sehn mich so nach Leben! Cluster C Persönlichkeitsstörung mit völliger
+        Selbstaufopferung Cirsten Ullrich, S. 123- 133
+      </li>
+      <div id="3"></div>
+    </ul>
+    <hr />
+    <h3>
+      Wie verläuft eine Gruppentherapie zur Behandlung sozialer Ängste und
+      Selbstwertstörungen (modernes ATP)
+    </h3>
+
+    <ul class="listWerde">
+      <li>
+        In meiner Praxis werden Selbstsicherheitstrainings in Gruppen
+        angeboten. Gruppentherapie gilt als Königsweg zur Behandlung von
+        sozialen Ängsten. Die Therapeutin hat mit dieser Methode seit über 30
+        Jahren Erfahrungen.
+      </li>
+      <li>
+        Nach dem Konzept des modernen ATP (Assertiveness Training Program -
+        übersetzt: Selbstsicherheits- Trainings-Programm) umfasst mangelndes
+        Selbstsicherheit drei Aspekte:
+
+        <ol class="dots">
+          <li>
+            Geringe soziale Kompetenzen (Situationen richtig einschätzen und
+            sich gut und selbstsicher verhalten können)
+          </li>
+          <li>Geringer Selbstwert als negative Einstellung zu sich selbst</li>
+          <li>
+            Übermäßige soziale Ängste in Bewertungs- Kontakt- Durchsetzungs
+            oder Konfliktsituationen
+          </li>
+        </ol>
+      </li>
+      <li>
+        Das ATP ist ein gut erprobtes Programm mit einem breiten
+        Anwendungsspektrum. Die feste Gruppe (in der Regel bestehend aus 6 – 8
+        Teilnehmern mit ähnlichen Zielen) trifft sich einmal pro Woche für
+        eine Doppelstunde über den Zeitraum von 25 bis 35 Abenden. Dabei
+        werden in Rollenspielen in der Gruppe und anschließenden Hausaufgaben,
+        die jeder allein durchführt, um das Gelernte zu festigen und zu
+        vertiefen neues Verhalten in sozialen Situationen in aufsteigender
+        Schwierigkeit geübt. Das bedeutet, dass am Anfang mit ganz leichten
+        Situationen begonnen wird und die Schwierigkeit der sozialen
+        Situationen dann immer mehr zunimmt. In der Gruppe wird besonderer
+        Wert auf einen wertschätzenden Umgang miteinander und viel
+        gegenseitige Unterstützung gelegt. Die Möglichkeit, an der Gruppe
+        regelmäßig teilzunehmen, die Bereitschaft zu Hausaufgaben und zur
+        Durchführung von Rollenspielen sowie sich auf die Gruppenregeln (v.a.
+        wertschätzende, hilfreiche Rückmeldung gegenüber den anderen
+        Gruppenmitgliedern) einzulassen ist Vorrausetzung zur Teilnahme.
+      </li>
+      <li>
+        Das ATP ist eines der am besten erforschten Therapieverfahren der
+        Verhaltenstherapie und wird in der Regel von den gesetzlichen
+        Krankenkassen finanziert.
+      </li>
+      <li>
+        Zur weiteren Lektüre: Basisvariablen moderner
+        Selbstsicherheitstrainings. Arbeit am Selbstwert, sozialer Kompetenz
+        und sozialer Angst am Beispiel des Assertiveness Training Program
+        (ATP) mit ergänzender Schematherapie Cirsten E. Ullrich und Wolfgang
+        Beth in Gruppen-Psychotherapien- höchst wirksam, ganz einfach und sehr
+        beliebt, Psychotherapie Band 24 Heft 1, Cip Medien, Herausgeber: Sulz,
+        Sichort- Hebing, Walter 2019 S. 186 – 202
+      </li>
+      <div id="4"></div>
+    </ul>
+
+    <hr />
+    <h3>Bedeutung von Selbsterfahrung und Supervision</h3>
+
+    <ul class="listWerde">
+      <li>
+        Selbsterfahrung hat in der Weiterbildung der Verhaltenstherapie einen
+        hohen Stellenwert. Sie dient der Verbesserung der Selbsterkenntnis und
+        dem Persönlichen Wachstum. Sie fördert soziale und emotionale
+        Kompetenzen. Sie hilft bei der der Entwicklung von Selbstfürsorge und
+        unterstützt den Aufbau einer positiven und professionellen Identität
+        als Psychotherpeut/in. In den letzten Jahren hat sich das Konzept von
+        Selbsterfahrung in ähnlicher Weise wie die Verhaltenstherapie selbst
+        verändert. Sowohl die kognitive als auch die emotionale Wende und
+        inzwischen auch die die "dritte Welle" der Verhaltenstherapie mit
+        ihren Hinwendungen zu überdauernden kognitiven Mustern, zur
+        Emotionalität, zum Körper und zu Akzeptanz- und Achtsamkeitsprozessen
+        fanden Einzug in die Praxis der verhaltenstherapeutischen
+        Selbsterfahrung. Zur Vertiefung und zum Kennenlernen meines
+        Verständnisses von Selbsterfahrung Mösler, Poppek et. al (Hrsg.) 2016
+        Psychotherapie Verlag, Schematherapie in der VT Selbsterfahrung, Beth,
+        Jacob, Ullrich S 223- 255
+      </li>
+
+      <li>
+        Aktuell biete ich Supervision im Rahmen der VT Ausbildung (für CIP/BAP
+        München, Bamberg/Erlangen) für Einzel- und Gruppentherapie sowie für
+        bereits approbierte ärztliche oder psychologische Psychotherapeuten im
+        Rahmen der Schematherapieausbildung an. Für Institutionen arbeite ich
+        sowohl im Bereich der Fallsupervision als auch der Teamsupervision.
+        Ich bin von der Kammer für die Vergabe von Fortbildungspunkten für
+        Selbsterfahrung und Supervision akkreditiert.
+      </li>
+    </ul>
+
+    <div id="footer">
+      <ul>
+        <li>Psychotherapeutische Praxis Cirsten Ullrich</li>
+        <li>Gabelsbergerstraße 30</li>
+        <li>80333 München</li>
+        <li>praxis@cirstenullrich.de</li>
+        <li>089 5420858</li>
+      </ul>
+      <footer>
+        Copyright ©2019 Alle Rechte vorbehalten |
+        <a href="Datenschutz.html">Datenschutz</a> |
         <a href="Impressum.html">Impressum</a>
-      </nav>
+      </footer>
     </div>
-    <div id="main">
-      <img src="images/cirsten1.jpeg" alt="Cirsten Ullrich" />
+  </div>
 
-      <h1 id="0">Mein Therapieangebot</h1>
-      <hr />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
 
-      <h3>Meine Behandlungsschwerpunkte</h3>
-      <ul class="listWerde">
-        <li>
-          Therapie für Menschen in Lebenskrisen, die z.B. durch Verluste,
-          unerwünschte Veränderungen oder schwere Erkrankungen ausgelöst werden.
-          Die so verursachten Probleme können sich z.B. in Ängsten,
-          Depressionen, Selbstzweifeln, körperlichen Beschwerden oder
-          Beziehungsproblemen äußern
-        </li>
-        <li>
-          Therapie von Sozialen Ängsten und Problemen mit dem Selbstwert sowie
-          bei Unsicherheit in sozialen Situationen. Diese können sich
-          verschiedenen Lebensbereichen ausdrücken, etwa in den Lebensfeldern
-          Freundschaft, Familie, Partnerschaft oder im Studium/Ausbildung und
-          Beruf
-        </li>
-        <li>Psychotherapie für Psychotherapeuten</li>
-        <li>Supervision und Selbsterfahrung</li>
-        <div id="1"></div>
-      </ul>
-
-      <hr />
-      <h3>Was ist Verhaltenstherapie?</h3>
-      <ul class="listWerde">
-        <li>
-          Psychotherapie ist die Behandlung psychisch bedinger oder mitbedingter
-          Krankheiten bzw. Störungen mithilfe psychologischer Methoden, die
-          wissenschaftlich überprüft sind. Psychotherapeut/innen haben die
-          fachlich erforderlichen und gesetzlich definierten Voraussetzungen zur
-          Durchführung von Psychotherapie.
-        </li>
-        <li>
-          Die Verhaltenstherapie wendet Erkenntnisse aus der experimentell
-          begründeten Psychologie an. Der Focus der Behandlung liegt klar auf
-          umschriebenenen Verhaltensweisen, Kognitionen, Emotionen und
-          Körperreaktionen. Aufbauend auf einer genauen Analyse der aktuellen
-          Probleme werden konkrete Veränderungsziele und Umsetzungsmöglichkeiten
-          erarbeitet, die darauf gerichtet sind, eine Besserung zu erreichen.
-          Die persönliche Lebensgeschichte des Betroffenen und seine Erfahrung
-          mit früheren Problemlöseansätzen werden mit berücksichtigt.
-          Verhaltenstherapeutische Methoden schließen dabei auch praktische
-          Übungen wie etwas Rollenspiele, Imaginationen oder Körperübungen mit
-          ein.
-        </li>
-        <li>
-          Das Verfahren ist für die Behandlung im Rahmen der Gesetzlichen
-          Krankenversicherung zugelassen.
-        </li>
-        <li>
-          Entnommen in Auszügen aus Informationen der Psychotherapeutenkammer
-          Bayern für Patienten und Ratsuchende
-          <a href="https://www.ptk-bayern.de">https://www.ptk-bayern.de</a>. Auf
-          diesen Seiten können Sie sich über Verhaltenstherapie auch
-          weitergehend informieren.
-        </li>
-        <div id="2"></div>
-      </ul>
-
-      <hr />
-      <h3>Was ist Schematherapie?</h3>
-      <ul class="listWerde">
-        <li>
-          Die Schematherapie geht davon aus, dass viele Störungen entstehen,
-          nachdem in der Lebensgeschichte (und hier überwiegend in Kindheit und
-          Jugend) zentrale Bedürfnisse (z.B. nach Bindung, Autonomie oder
-          realistischen Grenzen) nicht erfüllt wurden. Diese ungünstigen
-          Erfahrungen (zusammen mit Veranlagungsfaktoren) bewirken die
-          Entstehung von ungünstigen, z.T. schädlichen Verhaltens- und
-          Erlebnismustern (sogenannten Schemata), die sich in verschiedener
-          Weise (sogenannten Modi) zeigen:
-          <ol class="dots">
-            <li>
-              Im kindlichen Modus werden altbekannte, leidvolle Emotionen
-              wiedererlebt (z.B. Angst, Einsamkeit, Verletzlichkeit u.Ä.).
-            </li>
-            <li>
-              Im unerbittlich fordernden oder strafenden Elternmodus sind „alte“
-              abwertende, strafende, unerbittlich antreibende Selbstbewertungen
-              gespeichert, die als innere Stimmen unser Verhalten kommentieren
-              und bestimmen (z.B. „du bist nichts wert“, „sorge dich
-              ausschließlich um Andere“ etc.).
-            </li>
-            <li>
-              Im Bewältigungsmodus versucht die Person, die Aktualisierung
-              dieser negativ erlebten Emotionen zu vermeiden, indem sie
-              ungünstige Verhaltensmuster einsetzt (z.B. Vermeiden,
-              Überkompensieren, Erdulden etc.).
-            </li>
-          </ol>
-        </li>
-        <li>
-          In der Behandlung werden diese Modi gemeinsam in einer Fallkonzeption
-          gesammelt und insbesondere in Rollenspielen (sog. Stuhldialogen) und
-          Imaginationen verändert, damit ein heilsamer, neuer Umgang mit den
-          ursprünglich belastenden Situationen entwickelt, erprobt und eingeübt
-          werden kann.
-        </li>
-        <li>
-          Charakteristisch für die Schematherapie sind also:
-
-          <ol class="dots">
-            <li>
-              ein hoher biographischer Bezug und die Arbeit mit inneren Anteilen
-              sowie die ausgeprägte emotionale Aktivierung
-            </li>
-            <li>
-              besondere Betonung der liebevollen Therapiebeziehung auch in der
-              Konfrontation
-            </li>
-            <li>
-              die Betrachtung der „Bewältigungsmodi“ genannten dysfunktionalen
-              Coping Stile und Abwehr (z.B. Vermeidung, Überanpassung oder
-              dysfunktionale Kompensation), welche oft die Kommunikation
-              behindern, die Therapie blockieren und/oder selbst schon zum
-              Problem geworden sind (z.B. Sucht).
-            </li>
-          </ol>
-        </li>
-        <li>
-          Ursprünglich wurde die Schematherapie zur Behandlung von
-          Persönlichkeitsstörungen entwickelt, inzwischen gibt es auch
-          Wirknachweise für z.B. Depressionen, Zwänge und Ängste.
-        </li>
-        <li>
-          Der besondere Verdienst der Schematherapie besteht darin, Inhalte
-          anderer Therapieverfahren in die Verhaltenstherapie zu integrieren.
-          Schematherapie erweitert die Verhaltenstherapie um systemische und
-          humanistische Aspekte wie Arbeit mit inneren Anteilen, therapeutische
-          Haltung, Selbstheilungsgedanke, Imagination und durch
-          psychoanalytische Betrachtungsweisen wie Arbeit mit der Abwehr,
-          Beziehungsarbeit.
-        </li>
-        <li>
-          Entnommen und vereinfacht aus Beth, W., Jacob, G.; Ullrich, C. (2016)
-          Schematherapie in der VT- Selbsterfahrung. S.225f. In Mösler, Popek et
-          al (Hrsg.) .S.223-252. Tübingen Psychotherapieverlag.
-        </li>
-        <li>
-          Eine Schildung einer exemplarischen Therapie einer Patientin mit einer
-          selbstunsicheren und anankastischen Persönlichkeitsstörung, einer
-          nicht näher bezeichneten Eßstörung und einer Dysthymia findet sich
-          z.B. In Fallbuch Schematherapie, Jacob, Seebauer (Hrsg.), 2013, Ich
-          sehn mich so nach Leben! Cluster C Persönlichkeitsstörung mit völliger
-          Selbstaufopferung Cirsten Ullrich, S. 123- 133
-        </li>
-        <div id="3"></div>
-      </ul>
-      <hr />
-      <h3>
-        Wie verläuft eine Gruppentherapie zur Behandlung sozialer Ängste und
-        Selbstwertstörungen (modernes ATP)
-      </h3>
-
-      <ul class="listWerde">
-        <li>
-          In meiner Praxis werden Selbstsicherheitstrainings in Gruppen
-          angeboten. Gruppentherapie gilt als Königsweg zur Behandlung von
-          sozialen Ängsten. Die Therapeutin hat mit dieser Methode seit über 30
-          Jahren Erfahrungen.
-        </li>
-        <li>
-          Nach dem Konzept des modernen ATP (Assertiveness Training Program -
-          übersetzt: Selbstsicherheits- Trainings-Programm) umfasst mangelndes
-          Selbstsicherheit drei Aspekte:
-
-          <ol class="dots">
-            <li>
-              Geringe soziale Kompetenzen (Situationen richtig einschätzen und
-              sich gut und selbstsicher verhalten können)
-            </li>
-            <li>Geringer Selbstwert als negative Einstellung zu sich selbst</li>
-            <li>
-              Übermäßige soziale Ängste in Bewertungs- Kontakt- Durchsetzungs
-              oder Konfliktsituationen
-            </li>
-          </ol>
-        </li>
-        <li>
-          Das ATP ist ein gut erprobtes Programm mit einem breiten
-          Anwendungsspektrum. Die feste Gruppe (in der Regel bestehend aus 6 – 8
-          Teilnehmern mit ähnlichen Zielen) trifft sich einmal pro Woche für
-          eine Doppelstunde über den Zeitraum von 25 bis 35 Abenden. Dabei
-          werden in Rollenspielen in der Gruppe und anschließenden Hausaufgaben,
-          die jeder allein durchführt, um das Gelernte zu festigen und zu
-          vertiefen neues Verhalten in sozialen Situationen in aufsteigender
-          Schwierigkeit geübt. Das bedeutet, dass am Anfang mit ganz leichten
-          Situationen begonnen wird und die Schwierigkeit der sozialen
-          Situationen dann immer mehr zunimmt. In der Gruppe wird besonderer
-          Wert auf einen wertschätzenden Umgang miteinander und viel
-          gegenseitige Unterstützung gelegt. Die Möglichkeit, an der Gruppe
-          regelmäßig teilzunehmen, die Bereitschaft zu Hausaufgaben und zur
-          Durchführung von Rollenspielen sowie sich auf die Gruppenregeln (v.a.
-          wertschätzende, hilfreiche Rückmeldung gegenüber den anderen
-          Gruppenmitgliedern) einzulassen ist Vorrausetzung zur Teilnahme.
-        </li>
-        <li>
-          Das ATP ist eines der am besten erforschten Therapieverfahren der
-          Verhaltenstherapie und wird in der Regel von den gesetzlichen
-          Krankenkassen finanziert.
-        </li>
-        <li>
-          Zur weiteren Lektüre: Basisvariablen moderner
-          Selbstsicherheitstrainings. Arbeit am Selbstwert, sozialer Kompetenz
-          und sozialer Angst am Beispiel des Assertiveness Training Program
-          (ATP) mit ergänzender Schematherapie Cirsten E. Ullrich und Wolfgang
-          Beth in Gruppen-Psychotherapien- höchst wirksam, ganz einfach und sehr
-          beliebt, Psyhotherapie Band 24 Heft 1, Cip Medien, Herausgeber: Sulz,
-          Sichort- Hebing, Walter 2019 S. 186 – 202
-        </li>
-        <div id="4"></div>
-      </ul>
-
-      <hr />
-      <h3>Bedeutung von Selbsterfahrung und Supervision</h3>
-
-      <ul class="listWerde">
-        <li>
-          Selbsterfahrung hat in der Weiterbildung der Verhaltenstherapie einen
-          hohen Stellenwert. Sie dient der Verbesserung der Selbsterkenntnis und
-          dem Persönlichen Wachstum. Sie fördert soziale und emotionale
-          Kompetenzen. Sie hilft bei der der Entwicklung von Selbstfürsorge und
-          unterstützt den Aufbau einer positiven und professionellen Identität
-          als Psychotherpeut/in. In den letzten Jahren hat sich das Konzept von
-          Selbsterfahrung in ähnlicher Weise wie die Verhaltenstherapie selbst
-          verändert. Sowohl die kognitive als auch die emotionale Wende und
-          inzwischen auch die die "dritte Welle" der Verhaltenstherapie mit
-          ihren Hinwendungen zu überdauernden kognitiven Mustern, zur
-          Emotionalität, zum Körper und zu Akzeptanz- und Achtsamkeitsprozessen
-          fanden Einzug in die Praxis der verhaltenstherapeutischen
-          Selbsterfahrung. Zur Vertiefung und zum Kennenlernen meines
-          Verständnisses von Selbsterfahrung Mösler, Poppek et. al (Hrsg.) 2016
-          Psychotherapie Verlag, Schematherapie in der VT Selbsterfahrung, Beth,
-          Jacob, Ullrich S 223- 255
-        </li>
-
-        <li>
-          Aktuell biete ich Supervision im Rahmen der VT Ausbildung (für CIP/BAP
-          München, Bamberg/Erlangen) für Einzel- und Gruppentherapie sowie für
-          bereits approbierte ärztliche oder psychologische Psychotherapeuten im
-          Rahmen der Schematherapieausbildung an. Für Institutionen arbeite ich
-          sowohl im Bereich der Fallsupervision als auch der Teamsupervision.
-          Ich bin von der Kammer für die Vergabe von Fortbildungspunkten für
-          Selbsterfahrung und Supervision akkreditiert.
-        </li>
-      </ul>
-
-      <div id="footer">
-        <ul>
-          <li>Psychotherapeutische Praxis Cirsten Ullrich</li>
-          <li>Gabelsbergerstraße 30</li>
-          <li>80333 München</li>
-          <li>praxis@cirstenullrich.de</li>
-          <li>089 5420858</li>
-        </ul>
-        <footer>
-          Copyright ©2019 Alle Rechte vorbehalten |
-          <a href="Datenschutz.html">Datenschutz</a> |
-          <a href="Impressum.html">Impressum</a>
-        </footer>
-      </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="main.js"></script>
-  </body>
 </html>
